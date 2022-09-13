@@ -130,7 +130,7 @@ function loadProgressHandler(loader, resource) {
 //This `setup` function will run when the image has loaded
 function setup() {
   // console.log(app.width);
-  // createEnemies = setInterval(createEnemy, 5000);
+  createEnemies = setInterval(createEnemy, 5000);
   // BEGIN
   // playMusic();
   createPlayerSheet();
