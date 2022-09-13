@@ -115,6 +115,7 @@ app.loader
   .add("boom", "boom.png")
   .add("spritesheet", "explosions.json")
   .load(setup);
+ let sshet = new PIXI.BaseTexture.from(app.loader.resources["spaceship"].url);
 // app.loader.onComplete.add(createExplosion);
 function loadProgressHandler(loader, resource) {
   //Display the file `url` currently being loaded
@@ -283,7 +284,7 @@ function createExplosion() {
 }
 
 function createPlayerSheet() {
-  let sshet = new PIXI.BaseTexture.from(app.loader.resources["spaceship"].url);
+ 
  
   let numFrames = 12;
 
